@@ -1,0 +1,2010 @@
+
+@keyframes load {
+    
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+  }
+
+::root{
+    animation: load 1s ease-in-out 1;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(12, 16, 39);
+
+    animation: load 1s ease-in-out 1;
+}
+
+:root{
+    --light-grey-color : rgb(147, 168, 179);
+}
+
+@keyframes scale{
+    from{
+        height:inherit;
+        width: inherit;
+    }
+    to{
+        height: 50vh;
+        width: 50vh;
+    }
+}
+
+@keyframes popup{
+
+    0%{
+        transform: translateZ(0);
+    }
+
+    100%{
+        transform: translateZ(2%);
+    }
+
+}
+
+
+@media screen and (max-width:900px){
+    *{
+        font-size:12px ;
+    }
+}
+
+/********common classes*******/
+
+.round{
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:active{
+    color: inherit;
+}
+/*** a cotainer for all horizantal row***/
+.row-flex-container{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/***SECTION HEADER****/
+h1.section-header{
+
+    display: block;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* text-shadow: 2px 2px 4px white; */
+    margin: 0.5rem 8px 2px 0px;
+
+}
+
+/************ Page Header **********/
+.page-header{
+    
+    display: block;
+    position: fixed;
+    /* border: solid 2px black; */
+    background-color:rgb(12, 16, 39);
+    height: 12vh;
+    width: 95vw;
+    margin : 0px auto;
+    padding: 4px 24px;
+    margin-right: 0px;
+    color: white;
+    box-shadow: 0px 10px 20px rgb(12, 16, 39) ;
+    z-index: 10;
+}
+
+#page-header{
+    margin-right: 0px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.right-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+/***page logo**/
+
+
+/*******  logo  *******/
+.logo-wrapper{
+    position: relative;
+    display: inline-block;
+
+    
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-image: linear-gradient(to top right, purple, darkblue);
+    
+}
+
+.emoji {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid rgba(233, 245, 2, 0.44);
+    background-image: linear-gradient(to top right, rgb(255, 247, 0), rgb(255, 238, 0));
+    
+    position: absolute;
+    margin: auto;
+    left: 12.3px;
+    top:12.3px;
+}
+
+.glasses1 {
+    width: 8px;
+    height: 6px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    background-image: linear-gradient(to top right, purple, darkblue);
+    position: absolute;
+    top: 40%;
+    left: 16px;
+}
+
+.glasses2 {
+    width: 8px;
+    height: 6px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    background-image: linear-gradient(to top right, purple, darkblue);
+    position: absolute;
+    top: 40%;
+    left: 28px;
+}
+
+.stick {
+    /*    margin: 4px;*/
+    width: 8px;
+    height: 2px;
+    background-image: linear-gradient(to top right, purple, darkblue);
+    position: absolute;
+    top: 40%;
+    left: 21px;
+}
+
+.music-icon i {
+    color: rgb(104, 0, 250);
+    box-sizing: content-box;
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+
+#page-name{
+    display: flex;
+    flex-direction: column ;
+    align-content: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+#page-name p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+/** favourite **/
+
+
+#Favourites{
+    font-size: 1rem;
+    margin-left: 15%;
+    font-family: sans-serif;
+}
+
+
+/**bell icon**/
+
+.notification-icon{
+    font-size: 1.2rem;
+    margin: 0px 40px;
+}
+
+/**user profil photo **/
+
+.profile-photo{
+
+    display: inline-block;
+    height: 45px;
+    cursor: pointer;
+    background-image: url(trash_media/god.png);
+    width: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:2px solid white;
+
+}
+
+
+/***search bar ***/
+
+.search{
+    position: relative;
+    padding: 0.5rem;
+    background-color: inherit;
+    border: 0px;
+    width: 200px;
+    
+}
+
+
+.search-bar i{
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(147, 168, 179);
+}
+
+.search-bar{
+    z-index: 10;
+    top:20%;
+    align-items: center;
+    display: flex;
+    padding: 0px 4px;
+    right: 20%;
+    /* border: 1px black solid; */
+    border-radius: 5%;
+}
+
+.search-bar:focus{
+    border: 0px;
+}
+
+.search-bar div{
+    display: inline-block;
+    height: 100%;
+
+}
+
+/**header ddrop down**/
+
+input.nav-drop-down{ /**the checkbox which guides each drop down elemnt **/
+    display: none;
+}
+
+.nav-drop-down-container{
+    position: absolute;
+    right: 0rem;
+    top:9vh;
+
+}
+
+  
+.nav-drop-down-menu{
+    /* clear: none; */
+ opacity: 0;
+  max-height: 0;
+  /* display: none; */
+  transition: max-height 1s ease-in-out;
+  z-index: 0;
+  width:100vw;
+  font-size: 0.7rem;
+  position: absolute;
+  right: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  top:0.8rem;
+  background-color:rgb(20, 27, 65);
+  padding: 0px 4px;
+  transition: all 1s ease-in-out;
+}
+
+.nav-drop-down-menu ul{
+    display: none;
+}
+
+.nav-drop-down-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+    display: block;
+    overflow: hidden;
+    /* opacity: 0; */
+
+}
+.nav-drop-down-menu ul{
+    display: none;
+}
+.nav-drop-down-menu ul li {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    color:  white;
+    margin:0.5rem 0 0.5rem 0;
+    font-size: 15px;
+    z-index: 0;
+}
+
+.nav-drop-down-menu ul li :hover{
+  color: rgb(101, 115, 184);
+  cursor: pointer;
+}
+
+@media screen and (max-width:700px){
+
+    .nav-drop-down:checked ~ .nav-drop-down-menu{
+        max-height: 40vh;
+        opacity: 1;
+     
+        z-index: 2;
+    }
+
+    .nav-drop-down:checked ~ .nav-drop-down-menu ul{
+      display: block;
+    }
+
+
+}
+
+
+
+.nav-drop-down-menu i{
+    margin : 0 10px 0px 10px
+}
+
+
+/*header media queies*/
+
+@media screen and (max-width:700px){
+
+    .left-align{
+        
+        width: 10%;
+     height: 100%;
+    }
+    .notification-icon{
+        font-size: 1.2rem;
+        margin: 0px 10px;
+    }
+    #Favourites{
+       display: none;
+    }
+    .right-align{
+        align-self: flex-end;
+    }
+    .nav-bar{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:550px){
+    .search{
+        width:20vw;
+    }
+    .profile-photo{
+
+        
+        height: 30px;
+       
+        width: 30px;
+        margin-right: 10px;
+    
+    }
+}
+
+/*********** MAIN SECTION ***********/
+.main{
+
+    z-index: 1;
+    display: flex;
+    /* border: solid 2px black; */
+    position: relative;
+    top:18vh ;
+    display: flex;
+    margin: 0px 5% 15vh 5%;
+    
+    padding: 4px;
+
+}
+
+/****************** main player section **************/
+
+.main-section{
+    margin: 2px;
+    padding: 2px;
+    display: inline-block;
+    /* border: solid 2px black; */
+   display: flex;
+   flex-direction: column;
+    width: 70%;
+}
+
+
+/****** Artist Info ******/
+
+.artist-info-card{
+   
+    display: block;
+    
+    flex-direction: row;
+    position: relative;
+   display: flex;
+    align-items: center;
+    height: 28vw;
+    /* border: solid 2px rgb(124, 124, 124); */
+    width: 100%;  
+    margin-top:0px ; 
+    margin-bottom: 10px; 
+    background-color: rgb(20, 27, 65);
+    position: relative;
+   
+}
+
+/* **artisst image**  */
+
+.artist-main-image{
+    height: 28vw;
+    width :28vw;
+    
+    /* border: 2px solid white; */
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+   
+}
+
+.artist-main-image img{
+    height: 27vw;
+
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+/** Artit info **/
+.artist-main-content{
+    padding:0 10px;
+    height:inherit;
+    width:50%;
+    /* border: 1px cyan solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/**artist about section**/
+
+.artist-main-info{
+    
+    
+    width:100%;
+    /* border: 1px cyan solid; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2.main-artist-name{
+    color:white;
+    margin:0;
+    padding:0px !important;
+}
+h4.main-artist-sub{
+    margin:0;
+    font-weight: 500;
+    padding:0;
+    font-size: 0.9rem;
+    color:var(--light-grey-color);
+}
+
+p.main-artist-about{
+    font-weight: 400;
+    font-size: 0.7rem;
+    color:var(--light-grey-color);
+}
+
+
+
+/******* artist subscribe section ******/
+
+.artist-sub{
+    height: 10vw;
+    width:100%;
+    /* border: 1px cyan solid; */
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.basic-btn{
+    position: relative;
+    color: white;
+    height:50px;
+    transform-style: preserve-3d;
+    width:150px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.basic-btn:hover{
+    cursor: pointer;
+}
+
+button.play-all{
+    position: relative;
+    border:0;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(to right, rgb(56, 37, 176) ,rgb(195, 72, 223));
+}
+button.play-all:hover{
+    background-image: linear-gradient( to right , rgb(56, 37, 176) 5% ,rgb(195, 72, 223) );
+    box-shadow: 0 0 20px 2px rgba(195, 72, 223, 0.3);
+}
+
+button.play-all::after{
+    display: block;
+    top:55px;
+    height:2rem;
+    width:inherit;
+    position: absolute;
+    color:white;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color:rgb(195, 72, 223);
+    content: "80 Tracks | 16 Albums ";
+    text-align: center;
+}
+
+button.play-all:focus  , button.follow:focus {
+    border:0;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+   
+
+}
+button.play-all:active , button.follow:active{
+   transform: scale(0.9);
+}
+button.follow{
+    background-color: inherit;
+    border:0;
+    margin-left: 10px;
+    
+}
+
+button.follow:hover{
+   
+    color :rgb(212, 125, 255)
+}
+
+/*helps us put the battom shadow*/
+.shadow-help{
+    border :0 white solid;
+    height:0px;
+    width:28vw;
+    box-shadow: 0px -1vw 3vw 3vw rgb(20, 27, 65);
+}
+
+@media screen and (max-width:800px){
+    p.main-artist-about{
+        font-weight: 400;
+        font-size: 0.5rem;
+        color:var(--light-grey-color);
+    }
+    .basic-btn{
+        position: relative;
+        color: white;
+        height:25px;
+        transform-style: preserve-3d;
+        width:75px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    button.play-all::after{
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width:500px){
+    p.main-artist-about{
+        font-weight: 400;
+        font-size: 0.5rem;
+        color:var(--light-grey-color);
+    }
+    .basic-btn{
+        position: relative;
+        color: white;
+        height:25px;
+        transform-style: preserve-3d;
+        width:75px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    button.play-all::after{
+        display: none;
+        
+    }
+    .artist-info-card{
+   
+        display: block;
+        
+        flex-direction: row;
+        position: relative;
+       display: flex;
+        align-items: center;
+        height: 30vh;
+        /* border: solid 2px rgb(124, 124, 124); */
+        width: 100%;  
+        margin-top:0px ; 
+        margin-bottom: 10px; 
+        background-color: rgb(20, 27, 65);
+        position: relative;
+       
+    }
+    
+    /* **artisst image**  */
+    
+    .artist-main-image{
+        height: 30vh;
+        width :30vh;
+        
+        /* border: 2px solid white; */
+        flex-direction: column;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+       
+       
+    }
+    
+    .artist-main-image img{
+        height: 29vh;
+    
+        align-items: center;
+        justify-content: center;
+       
+    }
+    button.play-all::after{
+        display: block;
+        top:28px;
+        height:2rem;
+        width:inherit;
+        position: absolute;
+        color:white;
+        font-weight: 400;
+        font-size: 0.5rem;
+        color:rgb(195, 72, 223);
+        content: "80Tracks|16Albums";
+        text-align: center;
+    }
+}
+
+
+/*************** Artists Songs **********/
+.artist-songs{
+    width: 100%;
+    /* border: red 2px solid; */
+    height:630px ;
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.artist-song-card{
+    position: relative;
+
+    width: 100%;
+    height: 50px;
+    /* border: aqua 1px solid; */
+    display: flex;
+    margin-left: 5%;
+   
+}
+
+
+ol.artist-song-list{
+    padding-top: 0px;
+    margin: 0px;
+    padding-left: 8px;
+    position: relative;
+    width: 100%;
+}
+
+ol.artist-song-list li{
+    margin: 15px 0px;
+    padding: 10px;
+    margin-right:8px;
+    
+    list-style-type: none;
+    counter-increment: list;
+    position: relative;
+    background-color: rgb(26, 30, 51);
+
+}
+
+ol.artist-song-list li :hover{
+    cursor: pointer;
+  
+
+}
+
+/* .artist-song-card :hover{
+   cursor: pointer;
+    background-color: rgb(44, 50, 79);
+
+}
+ */
+
+
+/**numbered liist **/
+
+
+.artist-song-card::before{
+    display: flex;
+    height: 50px;
+   
+    width: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    color: var(--light-grey-color) ;
+    content: counter(list) " ";
+    position: absolute;
+    text-align: right;
+    left: -20px;
+    
+}
+
+.artist-song-card:hover::before{
+    display: flex;
+    height: 15px;
+    
+    width: 15px;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    color: var(--light-grey-color) ;
+    background-image: url(trash_media/play-solid.svg);
+    background-position: center;
+    background-size: cover;
+    content:  "";
+    position: absolute;
+    text-align: right;
+    top:16px;
+    left: -30px;
+}
+
+/**this pts zero befor thr forst nine**/
+
+.first-nine::before{
+    display: flex;
+    height: 50px;
+    
+    width: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    color: var(--light-grey-color) ;
+    content:  "0"counter(list);
+    position: absolute;
+    text-align: right;
+    left: -20px;
+}
+
+
+/**contnet insde the  music card sin queu**/
+
+.artist-song-cover-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    /* border: 1px white solid; */
+    box-shadow: 0px 0px 20px 0px rgba(247, 247, 247, 0.556);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 30px;
+    min-height: 30px ;
+}
+.artist-song-cover-pic img{
+    height: 50px;
+    
+    border-radius: 4px;
+    flex-shrink: 0;
+   
+}
+
+/* Wrapper for my image,song title and album name */
+.artist-song-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    height: inherit;
+    width: 40%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 15px;
+   
+}
+
+
+
+.artist-song-title{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+}
+
+.artist-song-album{
+    padding: 0;
+    margin-top: 1px;
+    margin: 0;
+    font-size: 0.7rem;
+    color:var(--light-grey-color);
+    font-weight: 100;
+}
+
+/***stream count***/
+
+.stream-count{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    height: inherit;
+    width: 20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(195, 72, 223) ;
+    font-size: 1rem;
+    align-items: center;
+}
+
+/***song duration ***/
+
+.song-duration{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    height: inherit;
+    width: 10%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:var(--light-grey-color) ;
+    font-size: 1rem;
+    align-items: center;
+    font-weight: 100;
+}
+
+/**like button**/
+.like-wrapper{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ /* border: 1px solid powderblue; */
+ height: inherit;
+ width: 2vw;
+ color: var(--light-grey-color);
+ cursor: pointer;
+ margin:0 5px;
+ 
+}
+.add-wrapper{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    width: 2vw;
+    color: var(--light-grey-color); 
+    margin:0 5px;
+}
+.share-wrapper{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    width: 2vw;
+    color: var(--light-grey-color);
+    margin:0 5px;
+
+}
+
+
+
+
+/************************ ASIDE *********************/
+
+.aside{
+
+    margin: 2px;
+    display: inline-block;
+    /* border: solid 2px black; */
+    height: 1020px;
+    position: relative;
+    width: 30%;
+}
+/******Aside HEader ******/
+.aside-section-header{
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+
+}
+
+
+
+.aside-header{
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 14px;
+}
+
+
+/***Drop Down ***/
+
+input.check-drop-down{ /**the checkbox which guides each drop down elemnt **/
+    display: none;
+}
+
+.drop-down-container-2{
+    position: relative;
+    right: 0rem;
+    top:0rem
+
+}
+
+.drop-down-menu-2{
+ 
+
+  display: none;
+ 
+  height: 0px;
+  width:0px;
+  font-size: 0.7rem;
+  position: absolute;
+  right: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  top:0rem;
+  background-color: white;
+  margin-top:10px ;
+  padding: 0px 4px;
+  margin-right: -10px;
+  transition: all 1s ease-in-out 0.5s;
+  
+}
+
+.drop-down-menu-2 ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+   
+    display: block;
+    overflow: hidden;
+    /* opacity: 0; */
+
+}
+.drop-down-menu-2 ul li {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    color:   rgb(12, 16, 39);
+    margin:0.5rem 0 0.5rem 0;
+}
+
+.drop-down-menu-2 ul li :hover{
+  color: rgb(101, 115, 184);
+  cursor: pointer;
+}
+
+.check-drop-down:checked ~ .drop-down-menu-2{
+
+    opacity: 0;
+    transform: scaleX(500px);
+    opacity: 1;
+    height: 65px;
+    width: 150px;
+    display: inline-block;
+    z-index: 4;
+    right: 14px;
+    top:0.8rem;
+}
+
+.drop-down-menu-2 i{
+    margin : 0 10px 0px 10px;
+  
+}
+
+.drop-down-2-label{
+    display: flex;
+    color:var( --light-grey-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    width: 100px;
+    justify-content: flex-end;
+    font-weight: 100;
+   
+}
+.drop-down-2-label i{
+    margin-top: 7px ;
+    font-size: 0.6rem;
+}
+
+
+/*********** similiar artitsts***************/
+
+.similiar-artists{
+    display: block;
+   
+    /* border: solid 2px purple; */
+    width: 100%;
+    margin-bottom : 2vw;
+
+}
+
+/******* Wrapper/Containers for similiar artist  cards*******/
+
+.similiar-artist-card-wrapper{
+    display: flex;
+    /* border: solid 2px tomato ; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/***** Artist CARDS ****/
+.similiar-artist-card{ /**this is for indiviual music cards present in this section**/
+
+    margin: 5px 20px 5px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  
+    position: relative;
+
+}
+
+/****Simiiar Arttist Details****/
+
+
+.recent-data{ /**this is the conatiner for the date which we want in each card element**/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* border: hotpink 2px solid; */
+}
+
+.similiar-artist-pic{
+    height: 7vw;
+    width: 7vw;
+    /* border: hotpink 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-shadow: 0px 30px 30px 2rem black;
+    /* color:rgb(182, 182, 208) ; */
+
+    color: whitesmoke;
+  
+
+}
+
+.similiar-artist-pic i{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out ;
+}
+
+.similiar-artist-pic:hover {
+    
+    opacity: 0.95;
+    /* opacity: 0.5; */
+    box-shadow: inset 100px 100px 10px 10px rgba(0, 0, 0, 0.426) ;
+  
+}
+
+.similiar-artist-pic:hover i{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.similar-artist-data{ /**this coreespond to the container which has the text part of the music crad **/
+    height: 50%;
+    width: 100%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+.similar-artist-data h3{ /** song name **/
+    margin:0 0 7px 0px;
+
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.similar-artist-data p{/**release date **/
+    margin: 0;
+    font-size: 0.7rem;
+    color: rgb(216, 216, 216);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#similiar-artist-1{
+    background-image: url(trash_media/new_release_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#similiar-artist-2{
+    background-image: url(trash_media/jcole-artist-3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#similiar-artist-3{
+    background-image: url(trash_media/joji-artist-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#similiar-artist-4{
+    background-image: url(trash_media/coldplay-ghost-stories.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sm-card-4{
+    display: none;
+}
+
+@media screen and (max-width:940px){
+    #sm-card-4{
+        display: flex;
+    }
+}
+
+
+
+
+/*** dotted drop down for each artist card***/
+input.check-drop-down{ /**the checkbox which guides each drop down elemnt **/
+    display: none;
+}
+
+.drop-down-container{
+    position: absolute;
+    right: 0rem;
+    top:0rem
+
+}
+
+.dots-button{
+    position: absolute;
+    top:-0.5rem;
+    right: 0;
+    /* z-index: -1; */
+}
+
+.dots:after {
+    cursor: pointer;
+    color: white;
+    content: '...';
+    font-size: 20px;
+    padding: 0 5px;
+  }
+  
+.drop-down-menu{
+  opacity: 0;
+  display: none;
+  transform: opacity 0.5s;
+  height: 100px;
+  width:150px;
+  font-size: 0.7rem;
+  position: absolute;
+  right: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  top:0.8rem;
+  background-color: white;
+  padding: 0px 4px;
+  transition: all 1s ease-in-out;
+}
+
+.drop-down-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+    display: block;
+    overflow: hidden;
+    /* opacity: 0; */
+
+}
+.drop-down-menu ul li {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    color:   rgb(12, 16, 39);
+    margin:0.5rem 0 0.5rem 0;
+}
+
+.drop-down-menu ul li :hover{
+  color: rgb(101, 115, 184);
+  cursor: pointer;
+}
+
+.check-drop-down:checked ~ .drop-down-menu{
+    opacity: 1;
+    display: inline-block;
+}
+
+.drop-down-menu i{
+    margin : 0 10px 0px 10px
+}
+
+@media screen and (max-width:940px){
+    .main{
+        flex-direction: column !important;
+    }
+    .main-section{
+        width: 100%;
+    }
+    .aside{
+        width: 100%;
+    }
+    .similiar-artist-card-wrapper{
+        flex-direction: row ;
+        align-items: start;
+        justify-content: flex-start;
+    }
+    .similiar-artist-card{
+        width: 45%;
+    }
+}
+
+
+
+@media screen and (max-width:500px){
+   
+    .similiar-artist-card-wrapper{
+        flex-direction: row ;
+        align-items: start;
+        justify-content: flex-start;
+    }
+    .similiar-artist-card{
+        width: 100%;
+    }
+    .recent-data{
+        width: 100%;
+    }
+    .similiar-artist-pic{
+        height: 10vh;
+        width: 10vh;
+        /* border: hotpink 2px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        text-shadow: 0px 30px 30px 2rem black;
+        /* color:rgb(182, 182, 208) ; */
+    
+        color: whitesmoke;
+      
+    
+    }
+}
+
+
+
+/*************  Recently Played *********/
+
+.music-queue{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    width: 100%;
+    margin: 0;
+    
+    height: 580px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   
+    
+    
+
+}
+
+.song-card-queue{
+    position: relative;
+
+    width: 90%;
+    height: 50px;
+    /* border: aqua 1px solid; */
+    display: flex;
+    margin-left: 10%;
+}
+
+
+ol.song-list{
+    padding-top: 0px;
+    margin: 0px;
+    padding-left: 8px;
+    position: relative;
+}
+
+ol.song-list li{
+    margin: 30px 0px;
+    list-style-type: none;
+    counter-increment: list;
+    position: relative;
+
+}
+
+/**numbered liist **/
+
+
+.song-card-queue::before{
+    display: flex;
+    height: 50px;
+    
+    width: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    color: var(--light-grey-color) ;
+    content: counter(list) " ";
+    position: absolute;
+    text-align: right;
+    left: -20px;
+    
+}
+
+/**this pts zero befor thr forst nine**/
+
+.first-nine::before{
+    display: flex;
+    height: 50px;
+    
+    width: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    color: var(--light-grey-color) ;
+    content:  "0"counter(list);
+    position: absolute;
+    text-align: right;
+    left: -20px;
+}
+
+
+/**contnet insde the  music card sin queu**/
+
+.song-cover-pic-queue{
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    /* border: 1px white solid; */
+    box-shadow: 0px 0px 20px 0px rgba(247, 247, 247, 0.556);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 30px;
+    min-height: 30px ;
+}
+.song-cover-pic-queue img{
+    height: 50px;
+    
+    border-radius: 4px;
+    flex-shrink: 0;
+   
+}
+
+.song-details-queue{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    height: inherit;
+    width: 55%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 15px;
+   
+}
+
+
+
+.song-queue-title{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+}
+
+.song-queue-artist{
+    padding: 0;
+    margin-top: 1px;
+    margin: 0;
+    font-size: 0.7rem;
+    color:var(--light-grey-color);
+    font-weight: 100;
+}
+
+/**like button**/
+.like-wrapper{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ /* border: 1px solid powderblue; */
+ height: inherit;
+ width: 2vw;
+ color: var(--light-grey-color);
+ 
+ 
+}
+
+@media screen and (max-width:940px){
+    .song-details-queue{
+       
+        width: 90%;
+       
+       
+    }
+    ol.song-list{
+        padding-top: 0px;
+        margin: 0px;
+        padding-left: 0px;
+        position: relative;
+    }
+}
+
+
+
+.music-queue::-webkit-scrollbar ,.artist-songs::-webkit-scrollbar {
+    width: 4px;
+    opacity: 0.5;
+}
+ 
+.music-queue::-webkit-scrollbar-track , .artist-songs::-webkit-scrollbar {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.music-queue::-webkit-scrollbar-thumb , .artist-songs::-webkit-scrollbar-thumb{
+  background-color: rgb(16, 208, 208);;
+  /* outline: 1px solid rgb(16, 208, 208); */
+}
+
+/**media queries**/
+@media screen and (max-width:1229){
+    .similiar-artistd-card{ /**this is for indiviual music cards present in this section**/
+
+        height: 100px;
+        margin: 10px 20px 10px 0px;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        /* border: solid 2px tomato ; */
+        position: relative;
+    }
+    .recent-data{ /**this is the conatiner for the date which we want in each card element**/
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        /* border: hotpink 2px solid; */
+    }
+}
+
+
+
+/*******MUSIC PLAYER BBOTTOM*******/
+
+.music-player{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    /* border: 2px solid black; */
+    height: 80px;
+    width: 100vw;
+    bottom: 0px;
+    /* background-color: #1E1E1E; */
+    background-color:  rgba(20, 27, 65, 0.905);
+    padding: 10px;
+    margin-right: 0px;
+    justify-content: center;
+}
+
+.music-player-wrapper{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    /* border: 2px solid black; */
+    height: 80px;
+    width: 90vw;
+    bottom: 0px;
+    background-color: rgba(20, 27, 65, 0.529);
+    padding: 10px;
+    margin-right: 2%;
+
+    justify-content: space-between;
+}
+
+/****LEFT SIDE****/
+
+.song-info-wrapper{
+
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    /* border: 1px white solid; */
+    height: 100%;
+
+}
+
+.player-song-img{
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    /* border: 1px white solid; */
+    display: flex;
+}
+
+.player-song-img img{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-song-info{
+
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    /* border: 1px white solid; */
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h3.player-song-name{
+    margin:0;
+    padding: 0;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+p.player-song-artist{
+
+        margin:0;
+        padding: 0;
+        color: var(--light-grey-color);
+        font-weight: 300;
+        font-size: 0.8rem;
+        font-weight: 100;
+}
+
+.left-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:20%;
+}
+
+.block-artist-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    height: 100%;
+    width: 50%;
+    color: var(--light-grey-color);
+    cursor: pointer;
+}
+
+.like-wrapper-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    width: 50%;
+    height: 100%;
+    color: var(--light-grey-color);
+    cursor: pointer;
+}
+
+.like-wrapper-2:hover , .block-artist-wrapper:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+   color: rgb(174, 187, 194);
+}
+
+/*****CENTER CONTROLS****/
+
+/***central-control-buttons**/
+.player-contols-wrapper{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* border: 1px white solid; */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.contol-buttons{
+    /* border: 1px pink solid; */
+    position: relative;
+    width: 50%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.contol-buttons {
+    color: var(--light-grey-color);
+}
+
+.contol-button:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+   color: rgb(174, 187, 194);
+}
+
+.player-control-shuffle{
+    font-size: 0.7rem;
+}
+
+.player-control-back{
+    font-size: 0.7rem;
+}
+
+.player-control-pause{
+    font-size: 1.8rem;
+
+}
+
+.player-control-forward{
+    font-size: 0.7rem;
+}
+
+.player-control-loop{
+    font-size: 0.7rem;
+
+}
+
+/** time stamp**/ 
+
+.time-bar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 95%;
+    height: 30%;
+    justify-content: space-between;
+  
+}
+.time-bar p{
+
+    color: var(--light-grey-color);
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.outer-time-bar{
+
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height:0;
+    border: 1px var(--light-grey-color) solid;
+}
+
+.time-elapsed{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    align-items: center;
+    width: 60%;
+    height:0;
+  border-bottom: 2px;
+  border-color: cyan ;
+  border-style: solid;
+  border-top:2px ;
+  border-right: 0px;
+}
+
+.time-toggle{
+    display: inline-block;
+    flex-direction: row-reverse;
+
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    background:cyan ;
+    border-radius: 50%;
+    border: 4px cyan solid;
+}
+.time-toggle:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+/****RIGHT BUTONS ****/
+
+.extra-contol-buttons{
+       
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+   
+    height: 100%;
+    align-items: center;
+}
+
+.right-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    width: 12%;
+    height: 100%;
+    color: var(--light-grey-color);
+    cursor: pointer;
+}
+.right-control:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+   color: rgb(174, 187, 194);
+}
+
+.volume-control{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.volume-control:hover{
+    cursor: pointer;
+}
+
+.volume-bar{
+    display:flex ;
+    width: 80%;
+    height: 0;
+    border-bottom: 1px solid  var(--light-grey-color);
+    border-top: 1px solid  var(--light-grey-color);
+    align-items: center;
+}
+.volume-level{
+    display:flex ;
+    width: 60%;
+    height: 0;
+    border-bottom: 1px solid cyan;
+    border-top: 1px solid  cyan;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.volume-toggle{
+    display: inline-block;
+    flex-direction: row-reverse;
+
+    align-items: center;
+    width: 3px;
+    height: 3px;
+    background:cyan ;
+    border-radius: 50%;
+    border: 4px cyan solid;
+}
+.volume-toggle:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.expand{
+    align-self: flex-end;
+}
+
+#music-player{
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#music-player:target{
+   
+ opacity: 1;
+ z-index: 3;
+
+}
+
+.toggle{
+    position: fixed;
+    right:-20px;
+    bottom:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+    height: inherit;
+    width: 12%;
+    height: 20px;
+    color: var(--light-grey-color);
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media screen and (max-width:750px){
+    .connect-device{
+        display: none;
+    }
+    
+    .contol-buttons{
+        /* border: 1px pink solid; */
+        position: relative;
+        width: 90%;
+        height: 50%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    #pause i{
+        font-size: 20px;
+        overflow: visible;
+    }
+    .music-player-wrapper{
+        
+        width: 97vw;
+    
+    }
+    .lyrics{
+        display: none;
+    }
+    .left-buttons{
+        display: none;
+       
+    }
+    .playlist{
+        display:none;
+    }
+
+    .music-player{
+    
+        padding: 0;
+       
+    }
+    
+    .music-player-wrapper{
+      
+        padding: 0px;
+      
+    }
+    .song-info-wrapper{
+
+     
+        width: 30%;
+        /* border: 1px white solid; */
+       
+    
+    }
+  
+}
+
+@media screen and (max-width:900px){
+    #pause i{
+        font-size: 20px;
+        overflow: visible;
+    }
+}
